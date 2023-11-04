@@ -1,0 +1,23 @@
+{% extends 'MGM/index.html'%}
+
+{% load static %}
+
+{% block titulo %}W.I.T.C.H{% endblock titulo %}
+
+{% block cambia %}
+
+<main class="px-3">
+    <h1>W.I.T.C.H</h1>
+    <p class="lead"><br>Aquí podrás crear tu W.I.T.C.H.        
+    <br>Para que quede en nuestra base de datos deberás completar los campos de nombre, elemento y signo zodiacal
+    {% block importante %}
+    <h5>Recordá poner siempre "witch" en el campo categoría</h5>
+    {% endblock importante %}  
+  </p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-light fw-bold border-white text-white" style="background-color:rgb(88,21,28)">Crear</a>
+    </p>
+    
+  </main>
+
+{% endblock cambia %}
